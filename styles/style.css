@@ -46,7 +46,8 @@ ol {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  white-space: nowrap
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .content {
@@ -84,11 +85,20 @@ ol {
   align-items: flex-start;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
 .search-form__fieldset-title {
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
 }
 
 .content__details {
